@@ -41,26 +41,27 @@ class RadaCisel
      */
     public String vypisSuda()
     {
-        String s = " ";
-        int suda = (i%2==0);
-        suda = Integer.parseInt(s);
+        String vysledek = " ";
         Collections.sort(cisla);
         for (int i : cisla)
-                s +=suda + " ";
-        return s;
+            if (i%2 == 0){
+                vysledek +=i + " ";
+            }
+        return vysledek.trim();
     
     }
     public String vypisLicha()
     {
-        String l = " ";
-        int licha = (i%2!==0);
-        licha = Integer.parseInt(l);
+        String vysledek = " ";
         Collections.sort(cisla);
         for (int i : cisla)
-            l += licha + " ";
-        return l;
+            if (i%2!=0){
+            vysledek += i + " ";
+            }
+        return vysledek.trim();
+    
     }
-    }
+}
 
 
 
