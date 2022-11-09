@@ -50,6 +50,10 @@ class RadaCisel
         return vysledek.trim();
     
     }
+    /**
+     *  Vrátí string -  výsledek seřazených lichých čísel
+     * @return výpis lichých čísel
+     */
     public String vypisLicha()
     {
         String vysledek = " ";
