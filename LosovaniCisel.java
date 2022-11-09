@@ -8,7 +8,7 @@ import java.util.Scanner;
  *
  * @author ou75o
  */
-public class LosovaniCisdel {
+public class LosovaniCisel {
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in, "Windows-1250");
