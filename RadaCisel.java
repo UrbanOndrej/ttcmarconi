@@ -6,33 +6,17 @@ package ttcmarconi;
 
 import java.util.ArrayList;
 import java.util.Collections;
-import java.util.Random;
 
-/**  čísela k losování a zaznamenávání  */
+/**  čísela k zaznamenávání  */
 class RadaCisel
 {
     /** Vnitřní kolekce čísel */
     private ArrayList<Integer> cisla;
-    /** Generátor náhodných čísel */
-    private Random random;
 
     /** Vytvoří další čísla */
     public RadaCisel()
     {
-        random = new Random();
         cisla = new ArrayList<Integer>();
-    }
-
-    /// <summary>
-    /// Vylosuje nové číslo a uloží ho do kolekce
-    /// </summary>
-    /// <returns>Nové  číslo</returns>
-    public int losuj()
-    {
-        
-        Integer cislo = random.nextInt(100) + 1;
-        cisla.add(cislo);
-        return cislo;
     }
 
     /**
@@ -50,10 +34,6 @@ class RadaCisel
         return vysledek.trim();
     
     }
-    /**
-     *  Vrátí string -  výsledek seřazených lichých čísel
-     * @return výpis lichých čísel
-     */
     public String vypisLicha()
     {
         String vysledek = " ";
